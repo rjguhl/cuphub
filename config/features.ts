@@ -3,6 +3,7 @@
 export const features = {
   sections: {
     heroToday: true,
+    ticker: true,
     pulseFeed: true,
     marketPulse: true,
     bracket: true,

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "seed-1",
+    "kind": "team-to-watch",
+    "title": "Mexico, at home, in front of 87,000",
+    "body": "Estadio Azteca opens the show. The host's group draw will set the volume for the whole tournament."
+  },
+  {
+    "id": "seed-2",
+    "kind": "city-spotlight",
+    "title": "Vancouver, the chillest host city",
+    "body": "Average June high of 21°C and a stadium ten blocks from the harbor. Bring a light jacket anyway.",
+    "href": "/cities/vancouver"
+  },
+  {
+    "id": "seed-3",
+    "kind": "stat-of-day",
+    "title": "104 matches, 39 days",
+    "body": "First tournament with 48 teams. Roughly 2.7 matches per day, every day, for six weeks."
+  },
+  {
+    "id": "seed-4",
+    "kind": "underdog",
+    "title": "Underdog tracker is open for nominations",
+    "body": "Tell us who's punching above their seed and we'll keep a column on it through groups."
+  },
+  {
+    "id": "seed-5",
+    "kind": "throwback",
+    "title": "1994: the last time the US hosted",
+    "body": "Average attendance 68,991 — still the all-time record. 2026 is built to break it."
+  },
+  {
+    "id": "seed-6",
+    "kind": "city-spotlight",
+    "title": "Mexico City sits 2,240m above sea level",
+    "body": "Visiting teams arrive a week early. The thin air giveth, the thin air taketh away."
+  }
+]

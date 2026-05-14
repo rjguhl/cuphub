@@ -5,11 +5,63 @@
 :root {
   --font-sans: ui-sans-serif, system-ui, sans-serif;
   --font-display: ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
 }
 
-/* Crisp pixel rendering for sprite imagery. Apply via `.pixel` on <img> / containers. */
+/* Pixel sprite rendering. */
 .pixel {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
+}
+
+/* Chalk line — used as section dividers, like the touchline on a pitch. */
+.chalk-line {
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.85) 0,
+    rgba(255, 255, 255, 0.85) 6px,
+    transparent 6px,
+    transparent 10px
+  );
+}
+
+/* Center circle motif — used behind hero numerals. */
+.center-circle {
+  position: relative;
+}
+.center-circle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, transparent 60px, rgba(255, 255, 255, 0.18) 60px, rgba(255, 255, 255, 0.18) 62px, transparent 62px),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 3px, transparent 3px);
+  pointer-events: none;
+}
+
+/* Penalty box outline — for cards that want pitch-marking trim. */
+.penalty-box {
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+}
+
+/* Scoreboard digits — for live scores. */
+.scoreboard {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
+}
+
+/* Subtle grass-blade noise for the pitch surface. */
+.grass-noise {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.04) 0,
+      rgba(0, 0, 0, 0.04) 1px,
+      transparent 1px,
+      transparent 3px
+    );
 }
